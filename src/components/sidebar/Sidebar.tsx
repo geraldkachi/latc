@@ -29,21 +29,16 @@ const Sidebar = () => {
   return (
     <section className={`sidebar hidden sm:block`}>
       <div
-        className={` sm:w-60 w-max flex flex-col justify-between transition-all ease-in-out  top-0 left-0 bg-[#] text-white p-5 h-screen pt-8 relative duration-300`}
+        className={` sm:w-60 w-max flex flex-col justify-between transition-all ease-in-out text-white px-5 h-screen relative duration-300`}
       >
-        <div className={`pt-6 ${"" && " mx-auto"}`}>
-          <div className="flex items-center justify-between pb-10 gap-4 border-b">
+        <div className={`${"" && " mx-auto"}`}>
+          <div className="flex items-center justify-between mb-20 py-5 gap-4 border-b border-[rgba(0, 0, 0, 0.20)] z-50">
             <div className="flex items-center gap-3">
               <div className="text-xl whitespace-nowrap text-[#64748B] font-extrabold">
                 LATC-CORP
               </div>
             </div>
-            {/* <MenuIcon
-              onClick={() => setOpen(!open)}
-              className={`cursor-pointer duration-500 ${
-                open && "rotate-[360deg]"
-              }`}
-            /> */}
+
           </div>
           {routeList.map((item, index) => {
             const activeItem = location.pathname.includes(item?.route);
@@ -75,14 +70,6 @@ const Sidebar = () => {
           })}
         </div>
 
-        {/* <div
-          className="flex items-center justify-start bg-[#E8E9F2] p-2 rounded-[4px] cursor-pointer"
-          onClick={logout}
-        >
-          <div className="flex items-center  gap-5">
-            <div className={`text-red-600 text-sm`}> Logout</div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
