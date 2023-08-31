@@ -1,0 +1,7 @@
+export { default as AdminIcon } from './AdminIcon'
+export { default as StatusIcon } from './StatusIcon'
+export { default as ReportsIcon } from './ReportsIcon'
+export { default as DashboardIcon } from './DashboardIcon'
+export { default as CustomersIcon } from './CustomersIcon'
+export { default as LoanCalculatorIcon } from './LoanCalculatorIcon'
+export { default as PersonalBankingIcon } from './PersonalBankingIcon'
