@@ -5,7 +5,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import './App.css'
 import { Layout } from './components';
 import Context from './components/context';
-import { CreateAccount, Home } from './pages';
+import { CreateAccount, Customers, Dashboard, Home, Status } from './pages';
 import { ProtectedRoutes, UnProtectedRoutes } from './routers';
 
 const App: React.FC = () => {
@@ -42,7 +42,10 @@ const App: React.FC = () => {
               {/* Protected Roues */}
               <Route element={<ProtectedRoutes />}>
                 <Route element={<Layout />}>
-                  <Route path="/home" element={<Home />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/customers" element={<Customers />} />
+                  <Route path="/status" element={<Status />} />
+                  <Route path="/personal-banking" element={<Home />} />
                 </Route>
               </Route>
               {/* 404 page */}

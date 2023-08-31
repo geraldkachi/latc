@@ -1,2 +1,5 @@
-export {  default as CreateAccount } from "./CreateAccount/CreateAccount"
 export { default as Home } from "./home/Home"
+export { default as Status } from "./Status/Status"
+export { default as Customers } from "./Customers/Customers"
+export { default as Dashboard } from "./Dashboard/Dashboard"
+export {  default as CreateAccount } from "./CreateAccount/CreateAccount"

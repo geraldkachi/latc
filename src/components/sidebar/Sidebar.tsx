@@ -14,9 +14,9 @@ const Sidebar = () => {
   };
 
   const routeList = [
-    { route: "/home", title: "Dashboard" },
-    { route: "/task", title: "Customers" },
-    { route: "/staff", title: "Personal Banking" },
+    { route: "/dashboard", title: "Dashboard" },
+    { route: "/customers", title: "Customers" },
+    { route: "/personal-banking", title: "Personal Banking" },
     { route: "/history", title: "Status" },
     { route: "/stand-up", title: "Reports" },
     { route: "/report", title: "Loan Calculator" },
@@ -32,7 +32,7 @@ const Sidebar = () => {
         className={` sm:w-60 w-max flex flex-col justify-between transition-all ease-in-out  top-0 left-0 bg-[#] text-white p-5 h-screen pt-8 relative duration-300`}
       >
         <div className={`pt-6 ${"" && " mx-auto"}`}>
-          <div className="flex items-center justify-between pb-10 gap-4">
+          <div className="flex items-center justify-between pb-10 gap-4 border-b">
             <div className="flex items-center gap-3">
               <div className="text-xl whitespace-nowrap text-[#64748B] font-extrabold">
                 LATC-CORP

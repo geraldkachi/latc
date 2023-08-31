@@ -2,6 +2,7 @@ import "./layout.css";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
 import BottomNav from "../bottomnav/BottomNav";
+import { AdminIcon } from "../../assets";
 
 
 const Layout = () => {
@@ -13,15 +14,16 @@ const Layout = () => {
       {/* {open ? <ChangePasswordModal {...{ open }} {...{ close }} /> : null} */}
       <section className={` `}>
         <Sidebar />
-        <div className={`layout__content bg-[#F1F5]  ${"open" ? "sm:pl-60" : "sm:pl-20"} `}>
-          <div className={`layout__content-main p-5 bg-[#F1F5F9]  `}>
-            <div className="flex items-center justify-end mb-3">
-              <div className="flex gap-2 items-center">
+        <div className={`layout__content bg-[#]  ${"open" ? "sm:pl-60" : "sm:pl-20"} `}>
+          <div className={`layout__content-main px-5 bg-[#fff]  `}>
+            <div className="flex items-center justify-end my-3 border-b">
+              <div className="flex gap-2 items-center my-3">
                 <p className="text-black text-[16px] mr-4">
-                  {(new Date(), "do MMMM yyyy, hh:mm a")}
+                  <AdminIcon className="cursor-pointer" />
                 </p>
+                  <img className="cursor-pointer" src="notification.svg" alt="notification" />
 
-                <div className="bg-[#F5F3F9] pr-3 py-2 flex gap-4 items-center rounded-lg px-2 whitespace-nowrap ">
+                <div className="bg-[#] pr-3 py-2 flex gap-4 items-center rounded-lg px-2 whitespace-nowrap ">
                   <span className="text-sm font-semibold capitalize">{`${lastName} ${firstName}`}</span>
                   profile Icon
                 </div>
