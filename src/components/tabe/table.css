@@ -7,10 +7,12 @@ table {
     min-width: 300px;
     border-spacing: 0;
     overflow-x: scroll;
+    border-radius: 8px;
+    background-color: white;
 }
 
 thead {
-    background-color: var(--second-bg);
+    background-color: white;
 }
 
 tr {
@@ -18,7 +20,7 @@ tr {
 }
 
 th {
-    color: #B9A7CE;
+    /* color: #; */
     text-transform: capitalize;
     padding: 10px 10px;
     font-size: 1rem;

@@ -32,6 +32,7 @@ const Layout = () => {
             <div className="px-3">
               <Outlet />
             </div>
+
           </div>
         </div>
         <BottomNav />
