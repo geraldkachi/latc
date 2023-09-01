@@ -27,11 +27,11 @@ const Sidebar = () => {
   ];
 
   return (
-    <section className={`sidebar hidden sm:block`}>
+    <section className={`sidebar hidden sm:block bg-white`}>
       <div
-        className={` sm:w-60 w-max flex flex-col justify- transition-all ease-in-out text-white  h- relative duration-300`}
-      >
-        <div className="flex items-center justify-between px-5 mb-20 gap-4 border-b border-[rgba(0, 0, 0, 0.20)] z-50">
+        className={` sm:w-60 w-max flex flex-col justify- transition-all ease-in-out text-white  h- relative duration-300`}>
+
+        <div className="flex items-center justify-between p-[11px] mt-2 mb-20 gap-4 border-b border-[rgba(0, 0, 0, 0.20)] z-50">
           <div className="flex items-center">
             <div className="text-xl whitespace-nowrap text-[#64748B] font-extrabold">
               LATC-CORP
@@ -39,7 +39,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className={`${"" && " mx-auto px-5"}`}>
+        <div className={`${" mx-auto px-5"}`}>
           {routeList.map((item, index) => {
             const activeItem = location.pathname.includes(item?.route);
 

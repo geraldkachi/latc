@@ -67,7 +67,7 @@ const latestOrders = {
 
 const Dashboard = () => {
   return (
-    <div className="h-full">
+    <div className="h-full pt-20">
       <div className="card__body">
         <Table
           headData={latestOrders.header}
