@@ -27,7 +27,7 @@ th {
 }
 td {
     text-transform: capitalize;
-    padding: 10px;
+    padding: 22px 50px;
     color:#727375;
     font-size: 1rem;
     /* font-size: .8rem; */
@@ -74,3 +74,8 @@ tbody > tr:hover {
     color: var(--txt-white);
     background-color: var(--second-color);
 }
+ @media screen and (man-width: 768px) {
+     td {
+         padding: 10px;
+     }
+ }

@@ -1,4 +1,6 @@
+import './styles.css'
 import { Table } from "../../components"
+import Cards from './Cards'
 
 const renderOrderHead = (item: any, index: number) => (
   <th className="hidden" key={index}>{item}</th>
@@ -67,7 +69,14 @@ const latestOrders = {
 
 const Dashboard = () => {
   return (
-    <div className="h-full pt-20">
+    <div className="h-full pt-3">
+      <div className="text- mb-[18px]">Loan Report Summary</div>
+      <div className="flex lg:flex-row flex-col gap-4 sm:gap-x-[23px] mb-10">
+        <Cards />
+        <Cards />
+        <Cards />
+      </div>
+
       <div className="card__body">
         <Table
           headData={latestOrders.header}

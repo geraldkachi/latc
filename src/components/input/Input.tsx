@@ -157,99 +157,107 @@
 import { DetailedHTMLProps, InputHTMLAttributes } from 'react';
 
 type Props = {
-	label?: string;
-	tooltip?: string;
-	helptext?: string;
-	inputClassName?: string;
-	LeadingIcon?: () => JSX.Element;
-	TrailingIcon?: () => JSX.Element;
-	innerRef?: any;
-	inputType?: 'default' | 'success' | 'warning' | 'error';
+    label?: string;
+    tooltip?: string;
+    helptext?: string;
+    inputClassName?: string;
+    LeadingIcon?: () => JSX.Element;
+    TrailingIcon?: () => JSX.Element;
+    innerRef?: any;
+    inputType?: 'default' | 'success' | 'warning' | 'error';
+    inputClass?: string;
+    labelClass?: string;
+    labelicon?: boolean;
 };
 
 export default function Input(
-	props: DetailedHTMLProps<
-		InputHTMLAttributes<HTMLInputElement>,
-		HTMLInputElement
-	> &
-		Props
+    props: DetailedHTMLProps<
+        InputHTMLAttributes<HTMLInputElement>,
+        HTMLInputElement
+    > &
+        Props
 ) {
-	const {
-		id,
-		label,
-		tooltip,
-		disabled,
-		readOnly,
-		helptext,
-		innerRef,
-		className,
-		LeadingIcon,
-		TrailingIcon,
-		inputClassName,
-		inputType = 'default'
-	} = props;
+    const {
+        id,
+        label,
+        tooltip,
+        disabled,
+        readOnly,
+        helptext,
+        innerRef,
+        className,
+        LeadingIcon,
+        TrailingIcon,
+        inputClassName,
+        inputClass,
+        labelClass,
+        labelicon,
+        inputType = 'default'
+    } = props;
 
-	const col = () => {
-		let color = 'grey-beau';
+    const col = () => {
+        let color = 'grey-beau';
 
-		if (inputType === 'success') {
-			color = 'meador';
-		} else if (inputType === 'warning') {
-			color = 'yellow';
-		} else if (inputType === 'error') {
-			color = 'orange';
-		}
+        if (inputType === 'success') {
+            color = 'green-600';
+        } else if (inputType === 'warning') {
+            color = 'yellow-600';
+        } else if (inputType === 'error') {
+            color = 'orange-600';
+        }
 
-		return color;
-	};
+        return color;
+    };
 
-	return (
-		<div className={`bg- ${className}`}>
-			{label && (
-				<label
-					className="my-1 text-black flex items-center text-left text-sm font-semibold mt-5"
-					htmlFor={id}
-				>
-					{label}
-					{tooltip && (
-						<>
-							{/* <Icon
+    return (
+        <div className={`bg- ${className}`}>
+            {label && (
+                <div className="flex items-center gap-x-4">
+                    {labelicon &&
+                    <img src="/editinput.svg" alt="" />
+                    }
+                    <label
+                        className={`${labelClass} mb-1 text-white flex items-center text-left text-xl font-normal leading-normal`}
+                        htmlFor={id}
+                    >
+                        {label}
+                        {tooltip && (
+                            <>
+                                {/* <Icon
 								icon="info-circle"
 								{...labelIconProps}
 								className={`inline-block ml-2 ${labelIconProps?.className}`}
 							/> */}
-						</>
-					)}
-				</label>
-			)}
-			<div
-                className={`bg-white flex items-center w-full rounded-lg overflow-hidden border focus-within:border-bluetiful disabled:bg-grey read-only:bg-grey ${inputClassName}
-                border-${col()}
-                ${
-					(disabled || readOnly) && 'bg-grey border-none'
-				}`}
-			>
-				{LeadingIcon && (
-					<span className="mx-2">
-						<LeadingIcon />
-					</span>
-				)}
-				<input
-					{...innerRef}
-					{...props}
-					// className={`text-base p-2 flex-grow min-w-64 focus:outline-none focus:ring focus:border-blue-100`}
-                    className="w-full border border-[#C2D0D6] p-3 rounded-lg focus:outline-[#2B8572]"
-				/>
-				{TrailingIcon && (
-					<span className="mx-2">
-						<TrailingIcon />
-					</span>
-				)}
-			</div>
-			{helptext && (
-				<small className={`text-xs my-2 text-${col()}`}>{helptext}</small>
-			)}
-		</div>
-	);
+                            </>
+                        )}
+                    </label>
+                </div>
+            )}
+            <div
+                className={`bg-white flex items-center w-full overflow-hidden
+				focus-w
+				disabled:bg-grey read-only:bg-grey ${inputClassName} border-${col()} ${(disabled || readOnly) && 'bg-grey border-none'
+                    }`}
+            >
+                {LeadingIcon && (
+                    <span className="mx-2">
+                        <LeadingIcon />
+                    </span>
+                )}
+                <input
+                    {...innerRef}
+                    {...props}
+                    className={`text-base p-2 flex-grow min-w-64 focus:outline-none focus:ring-0 outline-none ring-0 focus:right-0 ${inputClass}`}
+                />
+                {TrailingIcon && (
+                    <span className="mx-2">
+                        <TrailingIcon />
+                    </span>
+                )}
+            </div>
+            {helptext && (
+                <small className={`text-xs my-2 text-${col()}`}>{helptext}</small>
+            )}
+        </div>
+    );
 }
-

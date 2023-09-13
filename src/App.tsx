@@ -35,8 +35,8 @@ const App: React.FC = () => {
             <Routes>
               <Route element={<UnProtectedRoutes />}>
                 <Route path="/" element={<CreateAccount />} />
-                {/* <Route path="/" element={<Login />} />
-                  <Route path="/reset" element={<ResetPassword />} /> */}
+                <Route path="/home" element={<Home />} />
+                  {/* <Route path="/reset" element={<ResetPassword />} /> */}
               </Route>
 
               {/* Protected Roues */}

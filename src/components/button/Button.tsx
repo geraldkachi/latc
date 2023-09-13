@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
+import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
 
 const Spinner = () =>
     <div className=" flex items-center justify-center px-10 py-[2px]">
