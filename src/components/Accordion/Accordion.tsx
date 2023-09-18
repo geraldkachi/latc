@@ -36,7 +36,7 @@ function Accordion({
         >
             {showHeader && (
                 <div
-                    className={`w-full px-3 ${open || openAccordion
+                    className={`w-full px-4 ${open || openAccordion
                         ? ""
                         : ""
                         //   : "border shadow-[0px_8px_22px_rgba(151,143,175,0.08)]"

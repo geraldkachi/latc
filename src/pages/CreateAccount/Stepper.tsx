@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 import './stepper.css'
-const Stepper = () => {
-    const [currentStep, setCurrentStep] = useState<number>(1)
+
+interface Props {
+    currentStep: number
+    setCurrentStep: Dispatch<SetStateAction<number>>
+}
+const Stepper = ({ currentStep, setCurrentStep }: Props) => {
     const [complete, setComplete] = useState<boolean>(false)
     const steps: string[] = ['Personal Data:', 'Account Information', 'Choose Products', 'Choose a Password']
     return (
