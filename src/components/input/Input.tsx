@@ -247,7 +247,7 @@ export default function Input(
                 <input
                     {...innerRef}
                     {...props}
-                    className={`text-base p-2 flex-grow min-w-64 focus:outline-none focus:ring-0 outline-none ring-0 focus:right-0 ${inputClass}`}
+                    className={`text-base pt-3 flex-grow min-w- focus:outline-none focus:ring-0 outline-none ring-0 focus:right-0 ${inputClass}`}
                 />
                 {TrailingIcon && (
                     <span className="mx-2">

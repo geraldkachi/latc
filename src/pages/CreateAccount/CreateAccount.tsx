@@ -27,7 +27,7 @@ const CreateAccount = () => {
           <CreateAccountForm />
         )}
 
-        {/* <div className=""></div> */}
+        <div className=""></div>
 
       </div>
     </div>

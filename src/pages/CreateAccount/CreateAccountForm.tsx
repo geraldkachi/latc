@@ -18,53 +18,55 @@ const CreateAccountForm = () => {
             <form action="" className="w-full">
                 <div className="grid grid-cols-2 ga-">
 
-                    <div className="flex items-end">
+                    <div className="flex items-end mb-3">
 
-                        <span className="whitespace-nowrap">First Name:</span>
-                        <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
+                        <span className="whitespace-nowrap mr-3">First Name:</span>
+                        <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
                     </div>
-                    <div className="flex items-end">
+                    <div className="flex items-end mb-3">
 
-                        <span className="whitespace-nowrap">Last Name:</span>
-                        <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
+                        <span className="whitespace-nowrap mr-3">Last Name:</span>
+                        <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
                     </div>
                 </div>
 
-                <div className="flex items-end">
-                    <span className="whitespace-nowrap">Email:</span>
-                    <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="w-full" LeadingIcon={() => <></>} />
+                <div className="flex items-end mb-3">
+                    <span className="whitespace-nowrap mr-3">Email:</span>
+                    <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="w-full" LeadingIcon={() => <></>} />
                 </div>
-                <div className="flex items-end">
+                <div className="flex items-end mb-3">
 
-                    <span className="whitespace-nowrap">Phone number:</span>
-                    <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="w-full" LeadingIcon={() => <></>} />
+                    <span className="whitespace-nowrap mr-3">Phone number:</span>
+                    <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="w-full" LeadingIcon={() => <></>} />
                 </div>
 
                 <div className="grid grid-cols-2 ga-">
-                    <div className="flex items-end">
+                    <div className="flex items-end mb-3">
 
-                        <span className="whitespace-nowrap">Employee no:</span>
-                        <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
+                        <span className="whitespace-nowrap mr-3">Employee no:</span>
+                        <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
                     </div>
-                    <div className="flex items-end">
+                    <div className="flex items-end mb-3">
 
-                        <span className="whitespace-nowrap">Employee date:</span>
-                        <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
+                        <span className="whitespace-nowrap mr-3">Employee date:</span>
+                        <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
                     </div>
                 </div>
 
                 <div className="grid grid-cols-2 ga-  mb-16">
-                    <div className="flex items-end">
+                    <div className="flex items-end mb-3">
 
-                        <span className="whitespace-nowrap">Job position:</span>
-                        <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
+                        <span className="whitespace-nowrap mr-3">Job position:</span>
+                        <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
                     </div>
-                    <div className="flex items-end">
+                    <div className="flex items-end mb-3">
 
-                        <span className="whitespace-nowrap">Department:</span>
-                        <Input inputClassName="border-b border-[#C5C5C5]" inputClass="p-4 rounded-lg" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
+                        <span className="whitespace-nowrap mr-3">Department:</span>
+                        <Input inputClassName="border-b border-[#C5C5C5]" type="text" placeholder="Email here..." value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} className="" LeadingIcon={() => <></>} />
                     </div>
                 </div>
+
+
 
                 <Button type="submit" className="!bg-[#9E7F56] !text-white w-full" onClick={() => navigate('/dashboard')} title="Proceed" />
             </form>
