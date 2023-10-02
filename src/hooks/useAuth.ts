@@ -10,7 +10,8 @@ type State = {
     setPhoneNumber?: (phoneNumber: string) => void
     isAuthenticated?: boolean
 }
-const useAuth = create<State>((set, get) => ({
+// const useAuth = create<State>((set, get) => ({
+const useAuth = create<State>(() => ({
     token,
 }));
 

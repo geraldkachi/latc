@@ -1,4 +1,4 @@
-const StartSteps = ({ number, text }: { number: string, text: string }) => (
+const StartSteps = ({  text }: { number?: string, text: string }) => (
     <div className={`flex justify-center items-center flex-row`}>
         <div
             className={`flex justify-center items-center`}>

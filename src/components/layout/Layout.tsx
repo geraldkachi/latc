@@ -2,13 +2,13 @@ import "./layout.css";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
 import BottomNav from "../bottomnav/BottomNav";
-import { AdminIcon } from "../../assets";
+// import { AdminIcon } from "../../assets";
 import Topnav from "./Topnav";
 
 
 const Layout = () => {
-  const lastName = localStorage.getItem("lastName");
-  const firstName = localStorage.getItem("firstName");
+  // const lastName = localStorage.getItem("lastName");
+  // const firstName = localStorage.getItem("firstName");
 
   return (
     <div>

@@ -1,12 +1,14 @@
 import './styles.css'
 import { Table } from "../../components"
 import Cards from './Cards'
+import { ReactNode } from 'react'
+// import Graph from './Graph'
 
-const renderOrderHead = (item: any, index: number) => (
+const renderOrderHead = (item: ReactNode, index: number) => (
   <th className="hidden" key={index}>{item}</th>
 )
 
-const renderOrderBody = (item: any, index: number) => (
+const renderOrderBody = (item: {id: string,  user: string, price: string, date: string}, index: number) => (
   <tr key={index}>
     <td>{item.id}</td>
     <td>{item.user}</td>
@@ -76,6 +78,8 @@ const Dashboard = () => {
         <Cards />
         <Cards />
       </div>
+
+      {/* <Graph / */}
 
       <div className="card__body">
         <Table

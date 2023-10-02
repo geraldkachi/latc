@@ -1,4 +1,4 @@
-import { Pie } from "@ant-design/plots";
+// import { Pie } from "@ant-design/plots";
 
 type Props = {
   color: string[];

@@ -1,31 +1,31 @@
 import "./sidebar.css";
-import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+// import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { AdminIcon, CustomersIcon, DashboardIcon, LoanCalculatorIcon, PersonalBankingIcon, ReportsIcon, StatusIcon } from "../../assets";
 import Accordion from "../Accordion/Accordion";
 
 const Sidebar = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const navigate = useNavigate();
+  // const [open, setOpen] = useState<boolean>(false);
+  // const navigate = useNavigate();
   const location = useLocation();
 
-  const logout = () => {
-    localStorage.clear();
-    navigate("/");
-  };
+  // const logout = () => {
+  //   localStorage.clear();
+  //   navigate("/");
+  // };
 
-  const routeList = [
-    { route: "/dashboard", title: "Dashboard" },
-    { route: "/customers", title: "Customers" },
-    { route: "/personal-banking", title: "Personal Banking" },
-    { route: "/history", title: "Status" },
-    { route: "/stand-up", title: "Reports" },
-    { route: "/report", title: "Loan Calculator" },
-    { route: "/stand-up", title: "Admin" },
-    // ...(isAuthorised("super-admin")
-    //   ? [{ route: "/administrator", title: "Administrator" }]
-    //   : []),
-  ];
+  // const routeList = [
+  //   { route: "/dashboard", title: "Dashboard" },
+  //   { route: "/customers", title: "Customers" },
+  //   { route: "/personal-banking", title: "Personal Banking" },
+  //   { route: "/history", title: "Status" },
+  //   { route: "/stand-up", title: "Reports" },
+  //   { route: "/report", title: "Loan Calculator" },
+  //   { route: "/stand-up", title: "Admin" },
+  //   // ...(isAuthorised("super-admin")
+  //   //   ? [{ route: "/administrator", title: "Administrator" }]
+  //   //   : []),
+  // ];
 
   const faqArr = [
     {
