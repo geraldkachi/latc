@@ -144,7 +144,7 @@
 //         flexDirection: "column",
 //         justifyContent: "space-between",
 //         borderLeft: "3px solid",
-//         borderLeftColor: theme.palette.primary.main,
+//         borderLeftColocr: theme.palette.primary.main,
 //         margin: "10px 0 15px 0",
 //         padding: "0 10px",
 //         "& h3": {
